@@ -19,11 +19,9 @@ app_spec = Path(__file__).parent / 'getAlgoPriceContract.arc32.json'
 
 private_key = os.getenv('pk')
 signer = AccountTransactionSigner(private_key)
-
 address = address_from_private_key(private_key)
 
 params = algod_client.suggested_params()
-
 
 app_client = ApplicationClient(
     algod_client=algod_client,
