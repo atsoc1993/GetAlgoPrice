@@ -4,8 +4,10 @@ from algopy.arc4 import abimethod
 
 class getAlgoPriceContract(ARC4Contract):
     def __init__(self) -> None:
-        self.usdc_pool_address = Account('UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y')
-        self.tinyman_router = Application(148607000)
+        self.usdc_pool_address = Account('UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y') #testnet
+        #self.usdc_pool_address = Account('2PIFZW53RHCSFSYMCFUBW4XOCXOMB7XOYQSQ6KGT3KVGJTL4HM6COZRNMM') #mainnet
+        self.tinyman_router = Application(148607000) #testnet
+        #self.tinyman_router = Application(1002541853) #mainnet
 
     @abimethod
     def callGetScaledAlgoPrice(
