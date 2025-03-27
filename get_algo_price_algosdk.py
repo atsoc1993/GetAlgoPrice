@@ -47,4 +47,5 @@ for state in local_states:
         asset_2_reserves = state['value']['uint']
 
 algorand_price = asset_1_reserves / asset_2_reserves
+
 print(algorand_price)
