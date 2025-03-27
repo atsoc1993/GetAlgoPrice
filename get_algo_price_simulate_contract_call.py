@@ -38,7 +38,9 @@ app_client = ApplicationClient(
 atc = AtomicTransactionComposer()
 
 usdc_pool_address = 'UDFWT5DW3X5RZQYXKQEMZ6MRWAEYHWYP7YUAPZKPW6WJK3JH3OZPL7PO2Y' #testnet
-tinyman_router = 148607000 #testnet 
+#usdc_pool_address = '2PIFZW53RHCSFSYMCFUBW4XOCXOMB7XOYQSQ6KGT3KVGJTL4HM6COZRNMM' #mainnet
+tinyman_router = 148607000 #testnet
+#tinyman_router = 1002541853 #mainnet
 
 app_client.compose_call(
     atc,
